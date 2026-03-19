@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.left img{
+    height: 60px;
+    width: 60px;
+}
+
+.left p{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.serachBox{
+    width: 600px;
+    height: 70px;
+    /* background-color: black; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.serachBox input{
+    width: 80%;
+    border-radius: 25px;
+    height: 60%;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+
+.serachBox input:focus{
+    outline: none;
+}
+
+.serachBox button{
+    border: none;
+    padding: 8px 13px;
+    border-radius: 25px;
+    font-size: 18px;
+}
