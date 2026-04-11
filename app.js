@@ -56,14 +56,21 @@ async function startapp() {
 
 async function serachHandler() {
     let serachvalue = serach.value
-    console.log(serachvalue);
+    // console.log(serachvalue);
     
     let apiRes = await fetch(`https://forkify-api.jonas.io/api/v2/recipes?search=${serachvalue}`)
     // console.log(apiRes);
     let result = await apiRes.json()
-    console.log(result);
+    // console.log(result);
 
+    let {data:{recipes}} = result
 
+    console.log(recipes);
+    
+    let allHtmlUi = recipes.map((recipe)=> itemsFn(recipe) )
+    // console.log(allHtmlUi);
+    
+    sildbar.innerHTML = allHtmlUi
     
 }
 
